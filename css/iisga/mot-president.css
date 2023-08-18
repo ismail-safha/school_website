@@ -1,0 +1,122 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End Global Rules */
+
+.page_header {
+  background-color: #171717;
+  border-bottom: 5px solid #ccc;
+  border-top: 5px solid #384045;
+  margin: 0 0 35px 0;
+  min-height: 50px;
+  padding: 20px 0;
+  position: relative;
+  text-align: left;
+}
+.page_header .breadcrumb {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+.page_header .breadcrumb > li {
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+.page_header .breadcrumb li:first-child a {
+  color: #008fe2;
+}
+.page_header .breadcrumb i,
+.page_header .breadcrumb .active a {
+  color: #ccc;
+}
+
+/* ===Start Page_content=== */
+.page_content_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.page_content_wrapper .page_content_wrapper_right {
+  margin-bottom: 3rem;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+.page_content_wrapper .page_content_wrapper_right h2 {
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 2.2em;
+  margin: 0 0 32px 0;
+  color: #1d2127;
+  letter-spacing: -1px;
+}
+.page_content_wrapper .page_content_wrapper_right h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-bottom: 33px;
+  color: #1d2127;
+}
+.page_content_wrapper .page_content_wrapper_right p {
+  text-align: justify;
+  color: #777;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.page_content_wrapper .page_content_wrapper_right hr {
+  background-image: linear-gradient(to left, transparent, #dbdbdb, transparent);
+  border: 0;
+  height: 1px;
+  margin: 22px 0;
+}
+
+.page_content_wrapper .page_content_wrapper_right ul {
+  color: #777 !important;
+  margin-left: 60px;
+  list-style: disc;
+  font-size: 15px;
+}
+
+.page_content_wrapper .page_content_wrapper_lift {
+  flex: 1;
+  max-width: 33.3%;
+  margin-right: 70px;
+}
+.page_content_wrapper .page_content_wrapper_lift img {
+  box-shadow: 10px 10px 74px -15px rgba(0, 0, 0, 0.33);
+  margin: 3rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===End page_content=== */

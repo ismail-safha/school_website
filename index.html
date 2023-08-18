@@ -10,6 +10,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Main Templete File -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- Google Fonts -->
@@ -64,40 +69,63 @@
             </a>
             <nav>
               <ul class="main_navbar">
-                <li class="dropdown"><a href="#">Accueil</a></li>
                 <li class="dropdown">
+                  <a class="dropdown_item" href="#">Accueil</a>
+                </li>
+                <li class="dropdown hover_bg">
                   <a class="dropdown_item" href="#"
                     >iisga <i class="ri-arrow-down-fill"></i
                   ></a>
-                  <ul class="dropdown_menu">
-                    <li><a class="dropdown_item" href="#">Groupe IISGA</a></li>
+                  <!--start sub_menu -->
+                  <ul class="dropdown_menu submenu">
                     <li>
-                      <a class="dropdown_item" href="#">Mot du Président</a>
+                      <a class="dropdown_item" href="iisga/groupe-iisga.html"
+                        >Groupe IISGA</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown_item" href="#"
+                      <a class="dropdown_item" href="iisga/mot-president.html"
+                        >Mot du Président</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown_item"
+                        href="iisga/insertion-professionnelle.html"
                         >Insertion Professionnelle</a
                       >
                     </li>
                   </ul>
+                  <!--End sub_menu -->
+                </li>
+                <li class="dropdown hover_bg">
+                  <a
+                    class="dropdown_item"
+                    href="../school/formation-initiale/home.html"
+                    >Formation Initiale</a
+                  >
+                  <!--start sub_menu -->
+                  <ul class="dropdown_menu submenu_tow">
+                    <li>
+                      <a class="dropdown_item" href="iisga/groupe-iisga.html"
+                        >Groupe IISGA</a
+                      >
+                    </li>
+                  </ul>
+                  <!--End sub_menu -->
+                </li>
+
+                <li class="dropdown">
+                  <a class="dropdown_item" href="#">Formation pratique</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#">Formation Initiale</a>
+                  <a class="dropdown_item" href="#">Formation supérieure</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#">Formation Initiale</a>
+                  <a class="dropdown_item" href="#">Formation Continue</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#">Formation pratique</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Formation supérieure</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Formation Continue</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Contact</a>
+                  <a class="dropdown_item" href="#">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -109,14 +137,30 @@
 
     <!-- Start slider -->
     <section class="header_slider">
-      <div class="single_slider">
-        <!-- item one -->
-        <div class="single_slider_img">
-          <img src="img/slide1.jpg" alt="" />
-          <div class="slide_content container">
-            <h1>LA RIGUEUR</h1>
-            <h3>Pour former les acteurs de demain</h3>
-            <p>Depuis 1980</p>
+      <div class="slider">
+        <div class="single_slider sliderbox swiper">
+          <div class="swiper-wrapper">
+            <!-- item one -->
+            <div class="single_slider_img swiper-slide">
+              <img src="img/slide1.jpg" alt="" />
+              <div class="slide_content container">
+                <h1>LA RIGUEUR</h1>
+                <h3>Pour former les acteurs de demain</h3>
+                <p>Depuis 1980</p>
+              </div>
+            </div>
+            <!-- item tow -->
+            <div class="single_slider_img swiper-slide">
+              <img src="img/slide2.jpg" alt="" />
+              <div class="slide_content container">
+                <h1>L'EXCELLENCE</h1>
+                <h3>Pour former les acteurs de demain</h3>
+                <p>Depuis 1980</p>
+              </div>
+            </div>
+          </div>
+          <div class="custom-pagination">
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -327,7 +371,8 @@
       </div>
     </footer>
     <!-- End footer -->
-
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Main js -->
     <script src="js/main.js"></script>
   </body>

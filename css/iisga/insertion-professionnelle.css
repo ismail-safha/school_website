@@ -1,0 +1,131 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End Global Rules */
+
+.page_header {
+  background-color: #171717;
+  border-bottom: 5px solid #ccc;
+  border-top: 5px solid #384045;
+  margin: 0 0 35px 0;
+  min-height: 50px;
+  padding: 20px 0;
+  position: relative;
+  text-align: left;
+}
+.page_header .breadcrumb {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+.page_header .breadcrumb > li {
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+.page_header .breadcrumb li:first-child a {
+  color: #008fe2;
+}
+.page_header .breadcrumb i,
+.page_header .breadcrumb .active a {
+  color: #ccc;
+}
+
+/* ===Start Page_content=== */
+
+.page_content_wrapper .page_content_wrapper_right {
+  margin-bottom: 3rem;
+}
+.page_content_wrapper .page_content_wrapper_right h2 {
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 2.2em;
+  margin: 0 0 32px 0;
+  color: #1d2127;
+  letter-spacing: -1px;
+}
+.page_content_wrapper .page_content_wrapper_right h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-bottom: 33px;
+  color: #1d2127;
+}
+.page_content_wrapper .page_content_wrapper_right p {
+  text-align: justify;
+  color: #777;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.page_content_wrapper .page_content_wrapper_right hr {
+  background-image: linear-gradient(to left, transparent, #dbdbdb, transparent);
+  border: 0;
+  height: 1px;
+  margin: 22px 0;
+}
+
+.portfolio_list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.portfolio_list .portfolio_list_box {
+  width: 259px;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #ccc;
+  height: 263px;
+  margin-right: 10px;
+  margin-left: 10px;
+  row-gap: 5px;
+  padding: 15px 10px;
+  transition: all 0.5s;
+}
+.portfolio_list .portfolio_list_box:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio_list .portfolio_list_box img {
+  height: 100px;
+  width: 100px;
+}
+.portfolio_list .portfolio_list_box h2 {
+  font-weight: 400;
+}
+.portfolio_list .portfolio_list_box p {
+  font-weight: 300;
+  color: #777;
+}
+
+/* ===End page_content=== */
