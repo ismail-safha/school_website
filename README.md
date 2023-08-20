@@ -7,3 +7,5 @@
 1. create home page
 
 2. create category page
+
+3. contact page
