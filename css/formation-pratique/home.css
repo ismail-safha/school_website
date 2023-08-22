@@ -122,6 +122,14 @@ a {
   margin-bottom: 1.5rem;
   padding-left: 30px;
 }
+@media (max-width: 700px) {
+  .page_content_wrapper .page_content_wrapper_lift {
+    padding-left: 0 !important;
+  }
+  .page_content_wrapper .page_content_wrapper_lift h3 {
+    line-height: 30px;
+  }
+}
 .page_content_wrapper
   .page_content_wrapper_lift
   .page_content_wrapper_lift_top {

@@ -120,3 +120,9 @@ a {
 }
 
 /* ===End page_content=== */
+@media (max-width: 500px) {
+  .page_content_wrapper .page_content_wrapper_lift {
+    margin-right: 71px;
+    margin-left: -33px;
+  }
+}

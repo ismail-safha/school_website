@@ -97,6 +97,7 @@ a {
 .portfolio_list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
   row-gap: 10px;
 }
 .portfolio_list .portfolio_list_box {
@@ -129,3 +130,9 @@ a {
 }
 
 /* ===End page_content=== */
+@media (max-width: 500px) {
+  .page_content_wrapper .page_content_wrapper_lift {
+    margin-right: 71px;
+    margin-left: -33px;
+  }
+}

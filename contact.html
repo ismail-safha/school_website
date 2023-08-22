@@ -18,6 +18,11 @@
     <!-- plugin lightbox2  -->
     <link href="path/to/lightbox.css" rel="stylesheet" />
     <!-- Google Fonts -->
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,6 +31,7 @@
     />
   </head>
   <body>
+    <!-- Start top header -->
     <header>
       <div class="header_top_content container">
         <div class="header_info">
@@ -60,120 +66,192 @@
       </div>
       <!-- End top header -->
       <!-- Start main header -->
-      <div class="header_navbar">
-        <div class="container">
-          <div class="navbar">
+      <nav>
+        <div class="navbar container">
+          <div class="logo">
             <a href="#">
               <img src="img/logo-iisga.png" alt="" />
             </a>
-            <nav>
-              <ul class="main_navbar">
-                <li class="dropdown">
-                  <a class="dropdown_item" href="#">Accueil</a>
+          </div>
+          <ul>
+            <li class="dropdown_item"><a href="#">Accueil </a></li>
+            <li class="dropdown_item sub">
+              <a href="#">iisga </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Groupe IISGA</a>
                 </li>
-                <li class="dropdown hover_bg">
-                  <a class="dropdown_item" href="#"
-                    >iisga <i class="ri-arrow-down-fill"></i
-                  ></a>
-                  <!--start sub_menu -->
-                  <ul class="dropdown_menu submenu">
-                    <li>
-                      <a class="dropdown_item" href="groupe-iisga.html"
-                        >Groupe IISGA</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown_item" href="mot-president.html"
-                        >Mot du Président</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown_item"
-                        href="insertion-professionnelle.html"
-                        >Insertion Professionnelle</a
-                      >
-                    </li>
-                  </ul>
-                  <!--End sub_menu -->
+                <li>
+                  <a class="dropdown-item" href="#">Mot du Président</a>
                 </li>
-                <li class="dropdown hover_bg">
-                  <a
-                    class="dropdown_item"
-                    href="../school/formation-initiale/home.html"
-                    >Formation Initiale</a
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Insertion Professionnelle</a
                   >
-                  <!--start sub_menu -->
-                  <ul class="dropdown_menu submenu_tow">
-                    <li>
-                      <a
-                        class="dropdown_item"
-                        href="technicien-gestion-administrative-et-comptable.html"
-                        >Technicien Gestion Administrative et Comptable
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown_item"
-                        href="technicien-gestion-informatisee.html"
-                        >Technicien en Gestion Informatisée
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown_item"
-                        href="technicien-specialise-developpement-informatique.html"
-                        >Technicien Spécialisé en Développement Informatique
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown_item"
-                        href="technicien-specialise-systemes-et-reseaux-informatiques.html"
-                        >Technicien Spécialisé en Systèmes et Réseaux
-                        Informatiques
-                      </a>
-                    </li>
-                  </ul>
-                  <!--End sub_menu -->
-                </li>
-
-                <li class="dropdown hover_bg">
-                  <a class="dropdown_item" href="#">Formation pratique</a>
-                  <!--start sub_menu -->
-                  <ul class="dropdown_menu submenu_three">
-                    <li class="submenu_three_li">
-                      <a
-                        class="dropdown_item hover_dev"
-                        href="technicien-gestion-administrative-et-comptable.html"
-                        >Développement
-                      </a>
-                      <!--start sub_menu_sub -->
-                      <ul class="dropdown_menu hover_non">
-                        <li>
-                          <a class="dropdown_item" href=""
-                            >Formation Développement Informatique</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!--End sub_menu -->
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown_item" href="#">Formation supérieure</a>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown_item" href="#">Formation Continue</a>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown_item" href="#">Contact</a>
                 </li>
               </ul>
-            </nav>
-          </div>
+            </li>
+            <li class="dropdown_item sub">
+              <a href="#">Formation Initiale </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Technicien en Gestion Administrative et Comptable</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Technicien en Gestion Informatisée</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Technicien Spécialisé en Développement Informatique</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Technicien Spécialisé en Systèmes et Réseaux
+                    Informatiques</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown_item sub">
+              <a href="#">Formation pratique </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown_item sub">
+                  <a href="#">Développement </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Formation Développement Informatique</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Formation en Java</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Formation Linux</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Programmation de Sites Web Dynamiques</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown_item sub">
+                  <a href="#">Gestion des Entreprises </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Formation Gestion des Entreprises Niveau 1</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Formation Gestion des Entreprises Niveau 2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Informatique Bureautique</a>
+                </li>
+                <li class="dropdown_item sub">
+                  <a href="#">Réseaux ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Formation Réseaux</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Gestion d'un Reseau Informatique</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Maintenance Informatique</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Gestion d'un Reseau Informatique</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown_item sub">
+              <a href="#">Formation supérieure </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown_item sub">
+                  <a href="#">Master </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Master RH</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Master en Management</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Master Logistique</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Master Environnement</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Master Informatique</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Master en Finance</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown_item sub">
+                  <a href="#">DEES </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Assistante de Direction</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Banque, Chargé de Clientèle</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">Communication</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Communication Option Relations Publiques</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Développement Web</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Finance</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Gestion des Ressources Humaines</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown_item"><a href="#">CONTACT US</a></li>
+          </ul>
         </div>
-      </div>
+      </nav>
+
       <!-- End main header -->
     </header>
     <!-- Start pages header -->
@@ -363,7 +441,20 @@
           <h4>Réseaux sociaux</h4>
         </div>
       </div>
+      <div class="footer_copyright">
+        <p>
+          © 2023. Propulsé par
+          <a href="https://www.is.com" target="_blank" title="Hébergement web"
+            >Is</a
+          >
+        </p>
+      </div>
     </footer>
+
     <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <!-- Main js -->
+    <script src="js/main.js"></script>
   </body>
 </html>

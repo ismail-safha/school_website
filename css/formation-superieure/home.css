@@ -122,6 +122,28 @@ a {
   margin-bottom: 1.5rem;
   padding-left: 30px;
 }
+@media (max-width: 700px) {
+  .page_content_wrapper .page_content_wrapper_lift {
+    padding-left: 0 !important;
+  }
+  .page_content_wrapper .page_content_wrapper_lift h3 {
+    line-height: 30px;
+  }
+  .page_content_wrapper
+    .page_content_wrapper_lift
+    .page_content_wrapper_lift_top {
+    flex-direction: column;
+  }
+  .page_content_wrapper
+    .page_content_wrapper_lift
+    .page_content_wrapper_lift_top
+    img {
+    height: 235px !important;
+    width: 250px !important;
+    margin-right: 18px !important;
+    object-fit: cover !important;
+  }
+}
 .page_content_wrapper
   .page_content_wrapper_lift
   .page_content_wrapper_lift_top {
@@ -351,3 +373,21 @@ tbody tr:nth-of-type(odd) {
 
 /* End _1 formation-developpement-informatique */
 /* =================================== */
+
+.responsive-table {
+  overflow-x: auto;
+}
+.responsive-table::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.responsive-table::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.responsive-table::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}

@@ -9,3 +9,5 @@
 2. create category page
 
 3. contact page
+
+4. responsive
