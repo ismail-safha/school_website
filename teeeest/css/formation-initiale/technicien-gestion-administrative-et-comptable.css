@@ -181,6 +181,7 @@ a {
   height: 100px;
   width: 100px;
   margin-right: 18px;
+  box-shadow: none !important;
 }
 .page_content_wrapper .page_content_wrapper_lift h3 {
   font-size: 1.8em;
