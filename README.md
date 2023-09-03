@@ -6,8 +6,6 @@
 
 1. create home page
 
-2. create category page
+<br />
 
-3. contact page
-
-4. responsive
+<h3 align="left">▶ finish Project and add PHP code ✌✔ </h3><br />
